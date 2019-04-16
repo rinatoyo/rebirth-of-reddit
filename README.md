@@ -32,9 +32,14 @@ Use the sub-reddit API to achieve the following:
     - when "My Boards" is clicked
       - create an xhr get request to `http://www.reddit.com/r/MY_FAVORITE_SUBBREDDIT.json`
     - when "Random" is clicked
-      - create an xhr get request to `http://www.reddit.com/r/ANOTHER_SUBBREDDIT.json`
+      - create an xhr get request to a random subreddit. See notes below.
     - when "Get the app" is clicked
       - create an xhr get request to `http://www.reddit.com/r/ANOTHER_SUBBREDDIT.json`
+  - Random subreddit
+    - Create an array of 7 different subreddits
+    - Store this array of subreddits within your application, in a location that's highly visible (Scope-wise).
+    - On clicking the "Random" link, randomly choose one of the 7 subreddits from your array and create an xhr get request for that subreddit. Then display the data from that request, in your feed list.
+    - DO NOT USE the random api that already exists in Reddit's API. This will not work with XHR.
 1. Dynamically create our feed list with our proposed style from the data received from the API.
 1. Again, we have to have a good code demo as well so please use appropriate best practices when building out the app.
 1. Set up your project as a GitHub page so that we can demo your work.
