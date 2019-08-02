@@ -1,0 +1,139 @@
+html {
+  background-image: url("/public/assets/bg.jpg");
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+}
+
+#topContainer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  .myTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    background-image: url("/public/assets/header_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60%;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    // padding-top: 15px;
+  }
+
+  #plus {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    right: 0;
+    margin: 30px;
+    border: coral solid 2px;
+    line-height: 36px;
+    height: 35px;
+    width: 35px;
+    color: sienna;
+    font-size: 50px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: coral;
+      color: white;
+    }
+  }
+
+  .navBar {
+    background-color: #383839;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+
+    button {
+      background: none;
+      color: #696a6d;
+      border: none;
+      font-family: "Oswald", sans-serif;
+      font-size: 30px;
+    }
+
+    button:hover {
+      color: coral;
+    }
+  }
+}
+
+#contentContainer {
+  width: 1264px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+
+  .contentBox {
+    background-color: white;
+    height: 590px;
+    width: 520px;
+    margin: 30px;
+    font-family: "Lato", sans-serif;
+
+    &:hover {
+      border: solid coral 10px;
+      height: 570px;
+      width: 500px;
+      padding-right: 20px;
+    }
+
+    .image {
+      height: 280px;
+      width: 445px;
+      padding: 35px 35px 10px 35px;
+    }
+
+    .contentTitleBox {
+      padding: 0px 35px 5px 35px;
+      font-family: "Oswald", sans-serif;
+      font-size: 30px;
+      height: 2.8em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .contentSubtitleBox {
+      padding: 0px 35px 5px 35px;
+      color: gray;
+      font-size: 20px;
+    }
+
+    .contentTextBox {
+      font-size: 20px;
+      padding: 0px 35px 5px 35px;
+      height: 4.6em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+#footerContainer {
+  background-color: #383839;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+
+  #facebook {
+    padding-right: 5px;
+  }
+
+  #instagram {
+    padding-left: 5px;
+  }
+}
